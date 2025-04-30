@@ -1,0 +1,113 @@
+/* Links.css */
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    /* background: linear-gradient(135deg, #e0eafc, #cfdef3); */
+    min-height: 60vh;
+    margin-top: -200px;
+  }
+  
+  .link-title {
+    text-align: center;
+  }
+  
+  .link-title h3 {
+    font-size: 32px;
+    color: blueviolet;
+    margin-bottom: 40px;
+    font-weight: 700;
+  }
+  
+  .link-profile {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .link-profile a {
+    display: inline-block;
+    /* background: blue; */
+    border-radius: 50%;
+    padding: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.4s ease;
+  }
+  
+  .link-profile a:hover {
+    transform: translateY(-10px) scale(1.1);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+  }
+  
+  .link-profile img {
+    width: 60px;
+    height: 60px;
+    display: block;
+  }
+  
+  /* Optional: Different glow colors on hover */
+  .link-profile a:nth-child(1):hover {
+    box-shadow: 0 12px 25px rgba(14, 118, 168, 0.6); /* LinkedIn Blue */
+  }
+  .link-profile a:nth-child(2):hover {
+    box-shadow: 0 12px 25px rgba(214, 41, 118, 0.6); /* Instagram Pink */
+  }
+  .link-profile a:nth-child(3):hover {
+    box-shadow: 0 12px 25px rgba(36, 41, 46, 0.6); /* GitHub Black */
+  }
+  
+  /*  */
+  @media (max-width: 768px) {
+    .link {
+      flex-direction: column;
+      padding: 40px 10px;
+      margin-top: -100px;
+    }
+  
+    .link-title h3 {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+  
+    .link-profile {
+      gap: 25px;
+      justify-content: center;
+    }
+  
+    .link-profile a {
+      padding: 14px;
+    }
+  
+    .link-profile img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .link {
+      padding: 30px 5px;
+      margin-top: -80px;
+    }
+  
+    .link-title h3 {
+      font-size: 20px;
+    }
+  
+    .link-profile {
+      gap: 20px;
+    }
+  
+    .link-profile a {
+      padding: 12px;
+    }
+  
+    .link-profile img {
+      width: 44px;
+      height: 44px;
+    }
+  }
+  

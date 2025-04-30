@@ -1,0 +1,101 @@
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 170px;
+  position: relative;
+}
+
+.jr {
+  background-color: red;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* Toggle icon (mobile) */
+.menu-icon {
+  display: none;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* Navigation Menu */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-menu li {
+  padding: 10px 20px;
+  border-radius: 30px;
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-menu li:hover {
+  transform: scale(1.1);
+  background: linear-gradient(267deg, #B923E1 0.36%, #DA7C25 102.06%);
+}
+
+.nav-contact {
+  padding: 12px 30px;
+  border-radius: 50px;
+  background: linear-gradient(267deg, blue 0.37%, lightskyblue 102.06%);
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.nav-contact:hover {
+  transform: scale(1.1);
+}
+
+/* ------------------------------------------ */
+/* Responsive Styles for Mobile Devices */
+/* ------------------------------------------ */
+
+@media (max-width: 768px) {
+  .navbar {
+    margin: 20px 20px;
+    position: fixed;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #111;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    display: none;
+    z-index: 1000;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-contact {
+    display: none;
+  }
+}

@@ -1,0 +1,126 @@
+  .skills {
+    padding: 60px 80px;
+    color: white;
+    text-align: center;
+}
+
+.skill-title h1 {
+    font-size: 50px;
+    font-weight: bold;
+    background-color: lightskyblue;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 60px;
+    /* animation: glow 1s ease-in-out infinite alternate; */
+}
+
+/* Grid Layout */
+.skill-set {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    justify-items: center;
+}
+
+/* Skill Item */
+.skill-set-item {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(26, 20, 15, 0.2), 0 0 15px rgba(185, 35, 225, 0.2);
+    transform: translateY(0);
+}
+
+.skill-set-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+
+.skill-set-item h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #eeeeee;
+}
+
+/* Hover Effect */
+.skill-set-item:hover {
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 0 20px #23e1e1, 0 0 30px #23e1e1;
+}
+
+/* Title Glow Animation */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #23e1e1, 0 0 10px #23e1e1;
+  }
+  to {
+    text-shadow: 0 0 20px #23e1e1, 0 0 30px #23e1e1;
+  }
+}
+
+/* Responsive for Mobiles */
+@media (max-width: 900px) {
+    .skill-set {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .skill-title h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .skill-set {
+        grid-template-columns: 1fr;
+    }
+}
+/*  */
+@media (max-width: 1024px) {
+    .skill-set {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .skill-set {
+      grid-template-columns: repeat(2, 1fr); /* Two per row on tablets and phones */
+      gap: 30px;
+    }
+  
+    .skill-title h1 {
+      font-size: 40px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .skill-set {
+      grid-template-columns: repeat(2, 1fr); /* Two per row on small phones too */
+      gap: 25px;
+      margin-right: 200px;
+    }
+  
+    .skill-title h1 {
+      font-size: 34px;
+      margin-bottom: 30px;
+    }
+  
+    .skill-set-item img {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .skill-set-item h3 {
+      font-size: 16px;
+    }
+  }
