@@ -1,8 +1,8 @@
 
 import React from "react";
-import "./AnimatedBackground.css";
+import "./Animatedbackground.css";
 
-const AnimatedBackground = () => {
+const Animatedbackground = () => {
   return (
     <ul className="background">
       {Array.from({ length: 10 }).map((_, i) => (
@@ -12,4 +12,4 @@ const AnimatedBackground = () => {
   );
 };
 
-export default AnimatedBackground;
+export default Animatedbackground;
