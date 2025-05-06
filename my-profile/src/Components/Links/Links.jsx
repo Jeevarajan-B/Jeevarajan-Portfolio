@@ -10,7 +10,7 @@ const Links = () => {
       <div className="link-title">
         <h3>Visit my profiles</h3>
         <div className="link-profile">
-          <a href="https://www.linkedin.com/in/jeeva-raj-b7b3a8213//" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/jeeva-raj-b7b3a8213/" target="_blank" rel="noopener noreferrer">
             <img src={linkedin_img} alt="LinkedIn" />
           </a>
           <a href="https://www.instagram.com/_j_2.o_/" target="_blank" rel="noopener noreferrer">
